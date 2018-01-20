@@ -3,4 +3,5 @@ import compte from './compte';
 
 export default {
   ...user,
+  ...compte
 }
