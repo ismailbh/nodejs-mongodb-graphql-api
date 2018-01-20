@@ -4,6 +4,4 @@ import compteType from './compte';
 
 export default {
   userType,
-  postType, 
-  compteType
 }
