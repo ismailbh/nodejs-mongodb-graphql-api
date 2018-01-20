@@ -25,47 +25,45 @@ http://localhost:3000/graphql
 
 ### Example of the requests GraphQL
 
- # mutation {
-#   addUser(data: {email: "ax3@ax3.fr", name: "sma3"}) {
-#     _id
-#     email
-#     name
-#   }
-# }
+1.  mutation {
+   addUser(data: {email: "ax3@ax3.fr", name: "sma3"}) {
+     _id
+     email
+     name
+   }
+ }
 
+2. mutation {
+  updateUser(
+   id:"593c2365f4277a04905d04f3",
+   data: {name: "sma3"}) {
+    _id
+    email
+    name
+ }
 
-# mutation {
-#  updateUser(
-#   id:"593c2365f4277a04905d04f3",
-#   data: {name: "sma3"}) {
-#    _id
-#    email
-#    name
-#  }
-# }
+3. mutation {
+   removeUser(id:"593c2365f4277a04905d04f3") 
+   {
+     _id
+     name
+     email
+   }
+ }
 
-# mutation {
-#   removeUser(id:"593c2365f4277a04905d04f3") 
-#   {
-#     _id
-#     name
-#     email
-#   }
-# }
+4. mutation{
+   addPost(data:{
+     uid: "593c1d817e36dd0fb8f17f22",
+     title: "New IPhone realsed",
+     body: "New IPhone has been realsed yesterday"
+   }) {
 
-
-# mutation{
-#   addPost(data:{
-#     uid: "593c1d817e36dd0fb8f17f22",
-#     title: "New IPhone realsed",
-#     body: "New IPhone has been realsed yesterday"
-#   }) {
-#     _id
-#     uid
-#     title
-#     body
-#   }
-#}
+5.     _id
+     uid
+     title
+     body
+   }
+}
 
 # query{
 #   User(id: "593c1d817e36dd0fb8f17f22") {
