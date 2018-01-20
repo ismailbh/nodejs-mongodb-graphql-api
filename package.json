@@ -1,18 +1,25 @@
 {
   "name": "nodejs-mongodb-graphql-api",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "example of using nodejs, mongodb and graphql",
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www"
   },
+  "repository": "https://github.com/ismailbh/nodejs-mongodb-graphql-api.git",
+  "author": "Ben Hamouda Ismail",
   "dependencies": {
+    "bluebird": "^3.5.1",
     "body-parser": "~1.18.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.15.5",
     "jade": "~1.11.0",
+    "mongoose": "^5.0.1",
     "morgan": "~1.9.0",
-    "nodemon": "^1.14.11",
     "serve-favicon": "~2.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.11"
   }
 }
