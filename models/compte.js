@@ -1,4 +1,5 @@
-var mongoose = require("mongoose");
+var mongoose = require('bluebird').promisifyAll(require('mongoose'));
+
 mongoose.Promise = Promise;
 
 const Schema = mongoose.Schema;
