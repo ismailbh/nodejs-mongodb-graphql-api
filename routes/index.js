@@ -1,9 +1,8 @@
 var express = require('express');
-var router = express.Router();
+var app = express();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+/* GET graphql page. */
+// app.use('/graphql', require('../graphql'));
+app.use('/', require('../api/home'));
 
-module.exports = router;
+module.exports = app;
