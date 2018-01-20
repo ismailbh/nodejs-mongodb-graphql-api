@@ -59,16 +59,14 @@ http://localhost:3000/graphql
    title: "New IPhone realsed",
    body: "New IPhone has been realsed yesterday"
    }) {
-
-5.     _id
-        uid
-        title
-        body
-
+   \_id
+   uid
+   title
+   body
    }
    }
 
-6. query{
+5. query{
    User(id: "593c1d817e36dd0fb8f17f22") {
    \_id
    email
@@ -76,7 +74,7 @@ http://localhost:3000/graphql
    }
    }
 
-7. query{
+6. query{
    User(id: "593c1d817e36dd0fb8f17f22") {
    \_id
    email
@@ -90,7 +88,7 @@ http://localhost:3000/graphql
    }
    }
 
-8. query{
+7. query{
    Users {
    \_id
    email
